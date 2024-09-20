@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpaperaccess.com/full/2234647.jpg'); /* Add the background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fd9a9a; /* Keep the background color for readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#countdown div {
+    text-align: center;
+}
+
+#countdown span {
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+#countdown div {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Calendar input */
+input[type="date"] {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Progress bar container */
+.progress-container {
+    background-color: #d80909;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+}
+
+#progress-bar {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0%; /* Initial width 0% until progress is calculated */
+    transition: width 0.5s;
+}
+
+/* Responsiveness */
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #countdown {
+        flex-direction: column;
+    }
+
+    #countdown div {
+        margin-bottom: 10px;
+    }
+}
